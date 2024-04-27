@@ -1,6 +1,73 @@
-.flex-container {
+/* Сброс дефолтных стилей браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Названия переменных для CSS */
+:root {
+    --MainColor: rgb(200, 122, 218);
+}
+@font-face {
+    font-family: font1;
+    src: url(../fonts/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+body {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-color: rgb(142, 252, 252);
+}
+a:hover img {   
+    transform: scale(1.5); 
+    }
+.flex-container-head {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;    
 }
 .flex-p {
-    flex-grow: 1;
+    font-family: font2;
+    color: var(--MainColor);
+    font-size: 60px;
+    max-width: 1000px;
+    padding: 30px 80px;
 }
+.nav-link {
+    font-family: font1;
+    font-size: 10px;
+    line-height: 80%;
+    text-decoration: none;
+    color: var(--MainColor);
+    padding: 0 10px;  
+}
+.nav-link:hover {
+    color: rgb(4, 117, 174);
+}
+
+/* body 
+header {
+    padding: 48px 109px;
+    text-align: center
+}
+.MainPicture {
+    width: 569px;
+    height: 597px;
+}
+.booking.text {
+    font-family: exel-c;
+    font-size: 60px;
+    max-width: 530px;
+    padding: 48px 109px;
+} */
